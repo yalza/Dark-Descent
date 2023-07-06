@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public GameObject intText;
+    public GameObject intText,Key,LockedText;
     public bool toggle, interactale;
     public Animator doorAnim;
     public AudioSource openDoorSound, closeDoorSound;
@@ -14,21 +14,36 @@ public class Door : MonoBehaviour
         if(interactale)
         {
             if(Input.GetKeyUp(KeyCode.E)) {
-                toggle = !toggle;
-                if(toggle)
+                if(Key.active == false)
                 {
-                    doorAnim.ResetTrigger("close");
-                    doorAnim.SetTrigger("open");
+                    toggle = !toggle;
+                    if (toggle)
+                    {
+                        doorAnim.ResetTrigger("close");
+                        doorAnim.SetTrigger("open");
+                    }
+                    if (!toggle)
+                    {
+                        doorAnim.ResetTrigger("open");
+                        doorAnim.SetTrigger("close");
+                    }
+                    intText.SetActive(false);
+                    interactale = false;
                 }
-                if (!toggle)
+                else
                 {
-                    doorAnim.ResetTrigger("open");
-                    doorAnim.SetTrigger("close");
+                    LockedText.SetActive(true);
+                    StopCoroutine(disableText());
+                    StartCoroutine(disableText());
                 }
-                intText.SetActive(false);
-                interactale = false;
             }
         }
+    }
+
+    IEnumerator disableText()
+    {
+        yield return new WaitForSeconds(2f);
+        LockedText.SetActive(false);
     }
 
     private void OnTriggerStay(Collider other)
