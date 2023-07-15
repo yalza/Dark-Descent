@@ -7,10 +7,32 @@ public class Menu : MonoBehaviour
 {
     public string sceneName;
 
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void PlayGame()
     {
-        Debug.Log("aaa");
+        PlayerPrefs.SetInt("level", 1);
+        PlayerPrefs.Save();
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void ContinueGame()
+    {
+        if(PlayerPrefs.GetInt("level") == 0|| PlayerPrefs.GetInt("level") == 1)
+        {
+            PlayGame();
+        }
+        else
+        {
+            SceneManager.LoadScene("Level" + PlayerPrefs.GetInt("level").ToString());
+        }
+
+        
+
     }
 
     public virtual void QuitGame()
