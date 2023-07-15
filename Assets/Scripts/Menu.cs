@@ -7,6 +7,8 @@ public class Menu : MonoBehaviour
 {
     public string sceneName;
 
+    public GameObject settingsPanel, menuPanel;
+
     private void Start()
     {
         Cursor.visible = true;
@@ -48,4 +50,19 @@ public class Menu : MonoBehaviour
                             SceneManager.LoadScene("QuitScene");
         #endif
     }
+
+    public void Settings()
+    {
+        menuPanel.SetActive(false);
+        settingsPanel.SetActive(true);
+    }
+
+    public void Back2Menu()
+    {
+        menuPanel.SetActive(true);
+        settingsPanel.SetActive(false);
+    }
+
 }
+
+

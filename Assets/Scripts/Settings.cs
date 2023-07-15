@@ -230,5 +230,6 @@ public class settings : MonoBehaviour
         PlayerPrefs.SetInt("settingsSaved", 1);
         PlayerPrefs.Save();
     }
+    
 
 }
