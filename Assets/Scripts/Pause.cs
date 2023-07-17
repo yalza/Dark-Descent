@@ -48,4 +48,9 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
     }
+
+    public void Settings(GameObject settingPanel) {
+        settingPanel.SetActive(true);
+        pauseMenu.SetActive(false);
+    }
 }

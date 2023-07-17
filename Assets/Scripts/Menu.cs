@@ -19,6 +19,7 @@ public class Menu : MonoBehaviour
     {
         PlayerPrefs.SetInt("level", 1);
         PlayerPrefs.Save();
+        Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
     }
 
@@ -71,6 +72,10 @@ public class Menu : MonoBehaviour
         controlsPanel.SetActive(false);
     }
 
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }
 
 

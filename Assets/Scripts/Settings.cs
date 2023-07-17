@@ -12,6 +12,8 @@ public class settings : MonoBehaviour
     public bool inGame;
     public GameObject chromaticCam, vignetteCam, grainCam;
 
+    public GameObject SettingPanel;
+
     void Start()
     {
         if (PlayerPrefs.GetInt("settingsSaved", 0) == 0)
@@ -230,6 +232,11 @@ public class settings : MonoBehaviour
         PlayerPrefs.SetInt("settingsSaved", 1);
         PlayerPrefs.Save();
     }
-    
+
+    public void Back(GameObject Panel2Back)
+    {
+        Panel2Back.SetActive(true);
+        SettingPanel.SetActive(false);
+    }
 
 }
