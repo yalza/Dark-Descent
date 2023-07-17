@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
 {
     public string sceneName;
 
-    public GameObject settingsPanel, menuPanel;
+    public GameObject settingsPanel, menuPanel,controlsPanel;
 
     private void Start()
     {
@@ -57,10 +57,18 @@ public class Menu : MonoBehaviour
         settingsPanel.SetActive(true);
     }
 
+    public void Controls()
+    {
+        menuPanel.SetActive(false);
+        controlsPanel.SetActive(true);
+
+    }
+
     public void Back2Menu()
     {
         menuPanel.SetActive(true);
         settingsPanel.SetActive(false);
+        controlsPanel.SetActive(false);
     }
 
 }
