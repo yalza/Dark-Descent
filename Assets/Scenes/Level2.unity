@@ -1877,6 +1877,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: resoDrop
+      value: 
+      objectReference: {fileID: 1195150411}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: grainToggle
+      value: 
+      objectReference: {fileID: 1195150407}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: SettingPanel
+      value: 
+      objectReference: {fileID: 493011554}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: graphicsDrop
+      value: 
+      objectReference: {fileID: 1195150412}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: volumeSlider
+      value: 
+      objectReference: {fileID: 1195150410}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: vignetteToggle
+      value: 
+      objectReference: {fileID: 1195150408}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: chromaticToggle
+      value: 
+      objectReference: {fileID: 1195150409}
     - target: {fileID: 3025006685279841772, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
       propertyPath: settingsPanel
       value: 
@@ -1940,45 +1968,25 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8218117612571429475, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 804649466}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
---- !u!1 &804649465 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8218117612571429475, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+--- !u!114 &804649466 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
   m_PrefabInstance: {fileID: 804649464}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &804649466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804649465}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 803b168c0f8f23445934c3d606182048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graphicsDrop: {fileID: 1195150412}
-  resoDrop: {fileID: 1195150411}
-  volumeSlider: {fileID: 1195150410}
-  chromaticToggle: {fileID: 1195150409}
-  vignetteToggle: {fileID: 1195150408}
-  grainToggle: {fileID: 1195150407}
-  inGame: 0
-  chromaticCam: {fileID: 0}
-  vignetteCam: {fileID: 0}
-  grainCam: {fileID: 0}
-  SettingPanel: {fileID: 493011554}
 --- !u!114 &804649467 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3025006685279841772, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
   m_PrefabInstance: {fileID: 804649464}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804649465}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09e15cf97a0c227478edc8e09e6e3360, type: 3}
@@ -1989,7 +1997,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4828216853168866954, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
   m_PrefabInstance: {fileID: 804649464}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804649465}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 170bcd9b44f0b0c42bf40c2a45bb64ca, type: 3}
@@ -2521,11 +2529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720645280876790345, guid: 788002fdcf5904b40adbc5b6a7311cc0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4714492289444677487, guid: 788002fdcf5904b40adbc5b6a7311cc0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 4912313639225243522, guid: 788002fdcf5904b40adbc5b6a7311cc0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2593,7 +2601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7281039965270976882, guid: 788002fdcf5904b40adbc5b6a7311cc0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7381859615931746994, guid: 788002fdcf5904b40adbc5b6a7311cc0, type: 3}
       propertyPath: m_Pivot.x
@@ -2681,7 +2689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832102950541270734, guid: 788002fdcf5904b40adbc5b6a7311cc0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

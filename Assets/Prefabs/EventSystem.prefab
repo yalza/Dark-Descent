@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2312315460951684728}
   - component: {fileID: 4828216853168866954}
   - component: {fileID: 3025006685279841772}
+  - component: {fileID: 1491096812131698514}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4029042904763005857
 MonoBehaviour:
@@ -101,3 +102,26 @@ MonoBehaviour:
   settingsPanel: {fileID: 0}
   menuPanel: {fileID: 0}
   controlsPanel: {fileID: 0}
+--- !u!114 &1491096812131698514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8218117612571429475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803b168c0f8f23445934c3d606182048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graphicsDrop: {fileID: 0}
+  resoDrop: {fileID: 0}
+  volumeSlider: {fileID: 0}
+  chromaticToggle: {fileID: 0}
+  vignetteToggle: {fileID: 0}
+  grainToggle: {fileID: 0}
+  inGame: 0
+  chromaticCam: {fileID: 0}
+  vignetteCam: {fileID: 0}
+  grainCam: {fileID: 0}
+  SettingPanel: {fileID: 0}
