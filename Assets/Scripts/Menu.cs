@@ -31,6 +31,7 @@ public class Menu : MonoBehaviour
         }
         else
         {
+            Time.timeScale = 1;
             SceneManager.LoadScene("Level" + PlayerPrefs.GetInt("level").ToString());
         }
 
