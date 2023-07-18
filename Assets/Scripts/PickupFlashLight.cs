@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupFlashLight : MonoBehaviour
+public class PickupFlashLight : Interact
 {
-    public GameObject intText, flashLightTable, flashLightHand;
+    public GameObject flashLightTable, flashLightHand;
     public AudioSource pickupSound;
-    public bool interactable;
 
     private void Update()
     {
@@ -22,21 +21,5 @@ public class PickupFlashLight : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-            intText.SetActive(true);
-            interactable = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-            intText.SetActive(false) ;
-            interactable = false;
-        }
-    }
+   
 }

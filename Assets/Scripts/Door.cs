@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class Door : Interact
 {
-    public GameObject intText,Key,LockedText;
-    public bool toggle, interactale;
+    public GameObject Key,LockedText;
+    public bool toggle;
     public Animator doorAnim;
     public AudioSource openDoorSound, closeDoorSound;
 
     private void Update()
     {
-        if(interactale)
+        if(interactable)
         {
             if(Input.GetKeyUp(KeyCode.E)) {
                 if(Key.active == false)
@@ -28,7 +28,7 @@ public class Door : MonoBehaviour
                         doorAnim.SetTrigger("close");
                     }
                     intText.SetActive(false);
-                    interactale = false;
+                    interactable = false;
                 }
                 else
                 {
@@ -44,23 +44,5 @@ public class Door : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         LockedText.SetActive(false);
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-            interactale = true;
-            intText.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-            interactale = false;
-            intText.SetActive(false);
-        }
     }
 }

@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupKey : MonoBehaviour
+public class PickupKey : Interact
 {
-    public GameObject intText, Key;
+    public GameObject Key;
     public AudioSource pickupSound;
-    public bool interactable;
 
     private void Update()
     {
@@ -18,24 +17,6 @@ public class PickupKey : MonoBehaviour
                 interactable= false;
                 Key.SetActive(false);
             }
-        }
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-            intText.SetActive(true);
-            interactable = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-            intText.SetActive(false) ;
-            interactable = false;
         }
     }
 }

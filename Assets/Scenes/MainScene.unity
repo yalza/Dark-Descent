@@ -1313,9 +1313,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   light: {fileID: 1104334726}
   toggle: 1
-  interactable: 0
   lightBuld: {fileID: 682653627}
   offLight: {fileID: 2100000, guid: 407f5cf26c024ba44a7338b7bce5c3ae, type: 2}
   onLight: {fileID: 2100000, guid: 8a5e85941f90a104ab3b920e99fa2a62, type: 2}
@@ -2194,9 +2194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   light: {fileID: 414580883}
   toggle: 1
-  interactable: 0
   lightBuld: {fileID: 682653627}
   offLight: {fileID: 2100000, guid: 407f5cf26c024ba44a7338b7bce5c3ae, type: 2}
   onLight: {fileID: 2100000, guid: 8a5e85941f90a104ab3b920e99fa2a62, type: 2}
@@ -4399,9 +4399,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   light: {fileID: 879812478}
   toggle: 1
-  interactable: 0
   lightBuld: {fileID: 682653627}
   offLight: {fileID: 2100000, guid: 407f5cf26c024ba44a7338b7bce5c3ae, type: 2}
   onLight: {fileID: 2100000, guid: 8a5e85941f90a104ab3b920e99fa2a62, type: 2}
@@ -4777,9 +4777,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   light: {fileID: 1095465633}
   toggle: 1
-  interactable: 0
   lightBuld: {fileID: 682653627}
   offLight: {fileID: 2100000, guid: 407f5cf26c024ba44a7338b7bce5c3ae, type: 2}
   onLight: {fileID: 2100000, guid: 8a5e85941f90a104ab3b920e99fa2a62, type: 2}
@@ -5136,9 +5136,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   light: {fileID: 1300451560}
   toggle: 1
-  interactable: 0
   lightBuld: {fileID: 682653627}
   offLight: {fileID: 2100000, guid: 407f5cf26c024ba44a7338b7bce5c3ae, type: 2}
   onLight: {fileID: 2100000, guid: 8a5e85941f90a104ab3b920e99fa2a62, type: 2}
@@ -6384,10 +6384,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   Key: {fileID: 1400856749}
   LockedText: {fileID: 1147048738}
   toggle: 1
-  interactale: 0
   doorAnim: {fileID: 965579128}
   openDoorSound: {fileID: 0}
   closeDoorSound: {fileID: 0}
@@ -7075,9 +7075,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   light: {fileID: 142597161}
   toggle: 1
-  interactable: 0
   lightBuld: {fileID: 682653627}
   offLight: {fileID: 2100000, guid: 407f5cf26c024ba44a7338b7bce5c3ae, type: 2}
   onLight: {fileID: 2100000, guid: 8a5e85941f90a104ab3b920e99fa2a62, type: 2}
@@ -8191,9 +8191,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   Key: {fileID: 1130296768}
   pickupSound: {fileID: 0}
-  interactable: 0
 --- !u!1 &1140635392
 GameObject:
   m_ObjectHideFlags: 0
@@ -9591,9 +9591,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   light: {fileID: 1564486254}
   toggle: 1
-  interactable: 0
   lightBuld: {fileID: 682653627}
   offLight: {fileID: 2100000, guid: 407f5cf26c024ba44a7338b7bce5c3ae, type: 2}
   onLight: {fileID: 2100000, guid: 8a5e85941f90a104ab3b920e99fa2a62, type: 2}
@@ -10009,10 +10009,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   flashLightTable: {fileID: 1448627892}
   flashLightHand: {fileID: 1832649046}
   pickupSound: {fileID: 0}
-  interactable: 0
 --- !u!1 &1453149262
 GameObject:
   m_ObjectHideFlags: 0
@@ -10045,10 +10045,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   Key: {fileID: 1400856749}
   LockedText: {fileID: 1147048738}
   toggle: 1
-  interactale: 0
   doorAnim: {fileID: 1453149265}
   openDoorSound: {fileID: 0}
   closeDoorSound: {fileID: 0}
@@ -10236,9 +10236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   light: {fileID: 1359037270}
   toggle: 1
-  interactable: 0
   lightBuld: {fileID: 682653627}
   offLight: {fileID: 2100000, guid: 407f5cf26c024ba44a7338b7bce5c3ae, type: 2}
   onLight: {fileID: 2100000, guid: 8a5e85941f90a104ab3b920e99fa2a62, type: 2}
@@ -12121,10 +12121,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intText: {fileID: 865091666}
+  interactable: 0
   Key: {fileID: 1130296768}
   LockedText: {fileID: 1147048738}
   toggle: 1
-  interactale: 0
   doorAnim: {fileID: 1791402216}
   openDoorSound: {fileID: 0}
   closeDoorSound: {fileID: 0}
@@ -14219,6 +14219,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: resoDrop
+      value: 
+      objectReference: {fileID: 2072695557}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: grainToggle
+      value: 
+      objectReference: {fileID: 562593345}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: SettingPanel
+      value: 
+      objectReference: {fileID: 435215342}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: graphicsDrop
+      value: 
+      objectReference: {fileID: 1697756483}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: volumeSlider
+      value: 
+      objectReference: {fileID: 502469685}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: vignetteToggle
+      value: 
+      objectReference: {fileID: 1084677135}
+    - target: {fileID: 1491096812131698514, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
+      propertyPath: chromaticToggle
+      value: 
+      objectReference: {fileID: 2133558949}
     - target: {fileID: 3025006685279841772, guid: 680d869b422d0e64d9299bca7f13be4e, type: 3}
       propertyPath: settingsPanel
       value: 

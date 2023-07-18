@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightSwitch : MonoBehaviour
+public class LightSwitch : Interact
 {
-    public GameObject intText;
     public GameObject light;
-    public bool toggle, interactable;
+    public bool toggle;
     public Renderer lightBuld;
     public Material offLight, onLight;
     public AudioClip lightSwitchSound;
@@ -33,25 +32,6 @@ public class LightSwitch : MonoBehaviour
         {
             light.SetActive(false);
             lightBuld.material = offLight;
-        }
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-            Debug.Log('A');
-            intText.SetActive(true);
-            interactable = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-            interactable = false;
-            intText.SetActive(false);
         }
     }
 }

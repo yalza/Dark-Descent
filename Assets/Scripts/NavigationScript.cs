@@ -19,12 +19,4 @@ public class NavigationScript : MonoBehaviour
         
         agent.destination = new Vector3(Player.position.x,1.9f,Player.position.z);
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            SceneManager.LoadScene("Death");
-        }
-    }
 }
